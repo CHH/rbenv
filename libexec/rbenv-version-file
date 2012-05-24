@@ -4,8 +4,8 @@ set -e
 
 root="$RBENV_DIR"
 while [ -n "$root" ]; do
-  if [ -e "${root}/.rbenv-version" ]; then
-    echo "${root}/.rbenv-version"
+  if [ -e "${root}/.php-version" ]; then
+    echo "${root}/.php-version"
     exit
   fi
   root="${root%/*}"
